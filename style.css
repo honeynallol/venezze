@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+#grid{
+    width: 30%;
+    height: 100%;
+    background-color: red;
+    text-align: center;
+    /* gap: 1px; */
+    display: grid   ;
+     grid-template-areas:"a a a a a " 
+                         "b b b b b"
+                         "c c c d e"
+                         "c c c d f"
+                         "g g g g g"
+                         "h h h i i"
+                         "h h h i i";
+}
+
+.grid{
+    background-color: rgb(147, 147, 147);
+}
+#grid img{
+    position: absolute;
+    width: 7%;
+    height: 12%;
+    top: 44%;
+    margin-left: 19.5%;
+}
+#grid-1{
+    grid-area: a;
+    background-color: #A91D3A;
+    background-image: url(top.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4%;
+}
+#grid-2{
+    grid-area: b;
+    background-color: whitesmoke;
+    background-image: url(circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+}
+#grid-3{
+    grid-area: c;
+    background-image: url(hand.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25%;
+}
+#grid-4{
+    grid-area: d;
+    background-color: #D1AE9B;
+    background-image: url(heart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#grid-5{
+    grid-area: e;
+    background-color: #A91D3A;
+    background-image: url(heart3.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+}
+#grid-5 img{
+    width: 10%;
+    height: 20%;
+    margin-right: 30%;
+    margin-top: 5%;
+    /* position: absolute; */
+}
+#grid-6{
+    grid-area: f;
+    background-color: whitesmoke;
+    background-image: url(v.png);
+    background-size: cover;
+    background-position: center;
+}
+#grid-7{
+    grid-area: g;
+    background-color: #7b1a2d;
+    background-image: url(3h.png);
+    background-size: cover;
+    background-position: center;
+}
+#grid-8{
+    grid-area: h;
+    background-image: url(box.png);
+    background-size: cover;
+    background-position: center;
+}
+#grid-9{
+    grid-area: i;
+    background-image: url(envelop.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width:500px) {
+    #grid{
+        width: 100%;
+    }
+}
